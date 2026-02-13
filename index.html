@@ -3,199 +3,202 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ansh Mishra | Acoustics & Vibrations Engineer</title>
+<title>My Engineering Haven</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
 
 body {
-    margin: 0;
-    font-family: "Segoe UI", Roboto, sans-serif;
-    background-color: #0d0d0d;
-    color: #e6e6e6;
+    background: #f5f7fa;
+    color: #333;
     line-height: 1.6;
 }
 
 header {
+    background: #0a192f;
+    color: white;
+    padding: 1rem 2rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    font-size: 1.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #64ffda;
+}
+
+.hero {
+    height: 100vh;
+    background: linear-gradient(to right, #0a192f, #112240);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 100px 20px 80px 20px;
+    padding: 2rem;
 }
 
-h1 {
-    font-size: 48px;
-    margin-bottom: 10px;
-    color: #00bfff;
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
 }
 
-.subtitle {
-    font-size: 20px;
-    color: #aaa;
+.hero p {
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: #64ffda;
+    color: #0a192f;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
 }
 
 section {
-    max-width: 1000px;
+    padding: 6rem 2rem;
+    max-width: 1100px;
     margin: auto;
-    padding: 60px 20px;
 }
 
-h2 {
-    font-size: 28px;
-    border-bottom: 2px solid #1f1f1f;
-    padding-bottom: 10px;
-    margin-bottom: 30px;
-    color: #00bfff;
+.section-title {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2rem;
 }
 
-.project {
-    margin-bottom: 50px;
+.about p {
+    text-align: center;
+    max-width: 700px;
+    margin: auto;
 }
 
-.project-title {
-    font-size: 20px;
-    font-weight: bold;
-    color: #ffffff;
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
 }
 
-.project-role {
-    font-style: italic;
-    color: #888;
-    margin-bottom: 10px;
+.project-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: 0.3s ease;
 }
 
-.highlight {
-    color: #00bfff;
+.project-card:hover {
+    transform: translateY(-5px);
 }
 
-a {
-    color: #00bfff;
+.contact {
+    text-align: center;
+}
+
+.contact a {
+    color: #0a192f;
+    font-weight: 600;
     text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-.button {
-    display: inline-block;
-    margin-top: 25px;
-    padding: 12px 24px;
-    border: 1px solid #00bfff;
-    color: #00bfff;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-.button:hover {
-    background: #00bfff;
-    color: #0d0d0d;
 }
 
 footer {
+    background: #0a192f;
+    color: white;
     text-align: center;
-    padding: 40px;
-    font-size: 14px;
-    color: #666;
+    padding: 1rem;
 }
-
 </style>
 </head>
 
 <body>
 
 <header>
-    <h1>Ansh Mishra</h1>
-    <div class="subtitle">
-        Mechanical Engineer | Acoustics, Vibrations & Smart Structures
-    </div>
-    <a href="#work" class="button">View Selected Work</a>
+    <nav>
+        <h1>My Engineering Haven</h1>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 </header>
 
-<section id="about">
-    <h2>About</h2>
-    <p>
-        I design and validate dynamic systems operating in acoustically and mechanically complex environments.
-        My work integrates <span class="highlight">theoretical modeling, experimental validation, and advanced signal processing</span> 
-        to study and control high-frequency mechanical systems.
-    </p>
+<section class="hero">
+    <div>
+        <h2>Welcome to My Engineering Haven</h2>
+        <p>Exploring innovation, building solutions, and designing the future through engineering excellence.</p>
+        <a href="#projects" class="btn">View Projects</a>
+    </div>
+</section>
 
+<section id="about" class="about">
+    <h2 class="section-title">About Me</h2>
     <p>
-        My experience spans aerospace acoustics, ultrasonic communication, combustion instability,
-        underwater acoustic sensing, and vibration-driven smart structures. I specialize in 
-        building experimental rigs, conducting modal analysis using Scanning Laser Doppler Vibrometry (SLDV),
-        and developing automation tools that dramatically reduce analysis time while improving accuracy.
-    </p>
-
-    <p>
-        I am currently a Graduate Research Assistant at Georgia Tech working on ultrasonic communication
-        modules for bioinspired robotic systems in collaboration with ONR and Sandia National Laboratories.
+        I am passionate about engineering, problem-solving, and creating innovative solutions.
+        This platform showcases my projects, technical skills, and engineering journey.
     </p>
 </section>
 
-<section id="work">
-    <h2>Selected Work</h2>
-
-    <div class="project">
-        <div class="project-title">Ultrasonic Communication for Piezoelectric Robotic Fish</div>
-        <div class="project-role">Graduate Research Assistant — Smart Structures & Dynamical Systems Lab</div>
-        <p>
-            Developing an ultrasonic communication module enabling remote control of a multi-DOF bioinspired robotic fish.
-            Conducting vibration analysis and advanced signal processing on piezoelectric-actuated tail structures using
-            <span class="highlight">Scanning Laser Doppler Vibrometry (SLDV)</span> to characterize modal response,
-            thrust generation, and dynamic behavior.
-        </p>
+<section id="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects">
+        <div class="project-card">
+            <h3>Project One</h3>
+            <p>Description of your engineering project goes here.</p>
+        </div>
+        <div class="project-card">
+            <h3>Project Two</h3>
+            <p>Description of your engineering project goes here.</p>
+        </div>
+        <div class="project-card">
+            <h3>Project Three</h3>
+            <p>Description of your engineering project goes here.</p>
+        </div>
     </div>
-
-    <div class="project">
-        <div class="project-title">Flight Acoustics & Automation — Gulfstream Aerospace</div>
-        <div class="project-role">Innovation Engineering & Flight Intern</div>
-        <p>
-            Conducted in-flight cabin noise surveys and analyzed flyover noise certification data using MATLAB.
-            Developed automation scripts reducing acoustic data processing time from 
-            <span class="highlight">2 hours to 30 seconds (99% efficiency improvement)</span>.
-            Performed engine tonal analysis using ArtemiS Suite and correlated tonal content with cabin acoustic levels.
-        </p>
-    </div>
-
-    <div class="project">
-        <div class="project-title">High-Voltage Power Distribution Thermal-Vibration Testing — Sensata Technologies</div>
-        <div class="project-role">Mechanical Engineering Intern</div>
-        <p>
-            Designed experimental setups to correlate far-field sensor data with internal component temperatures
-            in high-voltage power distribution units (HVDU). Conducted vibration and mechanical shock testing
-            to evaluate potting and thermal interface materials. Developed analytical models in MATLAB and Ansys
-            and validated results through physical testing.
-        </p>
-    </div>
-
-    <div class="project">
-        <div class="project-title">Underwater Acoustic Identification Tags for AUV Navigation</div>
-        <div class="project-role">Naval Underwater Acoustics Lab</div>
-        <p>
-            Designed and optimized passive acoustic identification tags for autonomous underwater vehicle docking systems.
-            Used MATLAB and LabVIEW for backscatter signal analysis, improving tag uniqueness and localization accuracy.
-            Conducted directionality and sensitivity testing for transducers and hydrophones.
-        </p>
-    </div>
-
 </section>
 
-<section id="skills">
-    <h2>Technical Expertise</h2>
-
-    <p><span class="highlight">Modeling & Simulation:</span> MATLAB, Simulink, Ansys, COMSOL, Harmonic & Modal Analysis</p>
-    <p><span class="highlight">Signal Processing:</span> FFT Analysis, Engine Tonal Analysis, Guided Waves, Acoustic Characterization</p>
-    <p><span class="highlight">Experimental Systems:</span> Shaker Testing, SLDV, Impedance Tube Testing, Reverberation & Anechoic Chambers</p>
-    <p><span class="highlight">Programming:</span> MATLAB, Python, LabVIEW, Arduino, Version Control</p>
-
-</section>
-
-<section id="contact">
-    <h2>Contact</h2>
-    <p>Email: amishra360@gatech.edu</p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/ansh-mishra-92172418a/" target="_blank">ansh-mishra</a></p>
+<section id="contact" class="contact">
+    <h2 class="section-title">Contact</h2>
+    <p>Email: your@email.com</p>
+    <p>LinkedIn: <a href="#">Your LinkedIn Profile</a></p>
 </section>
 
 <footer>
-    © 2026 Ansh Mishra | Acoustics & Vibrations
+    <p>© 2026 My Engineering Haven | Designed with passion</p>
 </footer>
 
 </body>
